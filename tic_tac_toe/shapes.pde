@@ -4,7 +4,7 @@ void drawBoard() {
 
   float step = canvasSize / 3;
 
-  line(step. 0, step, canvasSize);
+  line(step, 0, step, canvasSize);
   line(step * 2, 0, step * 2, canvasSize);
 
   line(0, step, canvasSize, step);
@@ -33,7 +33,7 @@ void drawMarks() {
     float cx = (i % 3) * cellSize + cellSize / 2;
     float cy = (i / 3) * cellSize + cellSize / 2;
 
-    if (board[i] == X) drawX(cx, cy, cellSize);
-    if (board[i] == O) drawO(cx, cy, cellSize);
+    if (board[i] == x) drawX(cx, cy, cellSize);
+    if (board[i] == o) drawO(cx, cy, cellSize);
   }
 }
