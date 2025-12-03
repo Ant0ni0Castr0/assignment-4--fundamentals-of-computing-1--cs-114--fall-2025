@@ -12,7 +12,7 @@ void draw() {
 
 void keyPressed() {
   if (gameOver) {
-    println("The game has ended.");
+    System.out.println("The game has ended.");
     return;
   }
 
@@ -20,6 +20,6 @@ void keyPressed() {
     int move = key - '0';
     userMove(move);
   } else {
-    println("You have pressed an incorrect key. Please press a key between 0-8.");
+    System.out.println("You have pressed an incorrect key. Please press a key between 0-8.");
   }
 }

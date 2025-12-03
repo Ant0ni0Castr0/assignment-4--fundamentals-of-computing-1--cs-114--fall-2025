@@ -45,20 +45,20 @@ boolean boardFull() {
 
 void userMove(int move) {
   if (board[move] != empty) {
-    println("Square already filled.");
+    System.out.println("Square already filled.");
     return;
   }
 
   board[move] = o;
 
   if (checkWin(o)) {
-    println("User wins!");
+    System.out.println("User wins!");
     gameOver = true;
     return;
   }
 
   if (boardFull()) {
-    println("It is a tie.");
+    System.out.println("It is a tie.");
     gameOver = true;
     return;
   }
@@ -66,16 +66,16 @@ void userMove(int move) {
   computerMove();
 
   if (checkWin(x)) {
-    println("Computer Wins!");
+    System.out.println("Computer Wins!");
     gameOver = true;
     return;
   }
 
   if (boardFull()) {
-    println("It is a tie.");
+    System.out.println("It is a tie.");
     gameOver = true;
     return;
   }
 
-  println("The game continues.");
+  System.out.println("The game continues.");
 }
