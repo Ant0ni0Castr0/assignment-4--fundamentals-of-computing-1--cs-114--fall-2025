@@ -13,10 +13,10 @@ void computerStart() {
 
 void computerMove() {
   while (true) {
-    int i = int(random(board.length));
+    int randomNum = int(random(board.length));
 
-    if (board[i] == empty) {
-      board[i] = x;
+    if (board[randomNum] == empty) {
+      board[randomNum] = x;
       return;
     }
   }
