@@ -20,6 +20,7 @@ void keyPressed() {
     int move = key - '0';
     userMove(move);
   } else {
-    System.out.println("You have pressed an incorrect key. Please press a key between 0-8.");
+    System.out.println("You have pressed an incorrect key. Please press a key" +
+                      "between 0-8.");
   }
 }
